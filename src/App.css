@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+main {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.background-img {
+  background-color: red;
+}
+section {
+  display: flex;
+
+  margin: 0 100px;
+}
+button {
+  background-color: black;
+  color: white;
+  height: 80px;
+  width: 150px;
+  margin: 0 20px;
+  flex: 3;
+  font-size: 1.3rem;
+  border-radius: 5px;
+}
+p {
+  background-color: black;
+  color: white;
+  line-height: 80px;
+  margin: 0 140px;
+  text-align: center;
+  font-size: 2rem;
+  border-radius: 5px;
+}
