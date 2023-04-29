@@ -3,11 +3,13 @@ import "./App.css";
 import data from "./assets/data.json";
 console.log(data); // j'ai ma data
 
-{
-  /*const [chooseMovie, setChooseMovie] = useState("");*/
-}
-
 const App = () => {
+  const [movieData, setMovieData] = useState(false);
+
+  const handleClick = () => {
+    setMovieData(true);
+  };
+
   return (
     <main className="background-img">
       <section>
@@ -17,7 +19,6 @@ const App = () => {
               <button
                 key={elemMovies.id}
                 onClick={() => {
-                  elemMovies.name;
                   console.log(elemMovies.name);
                 }}
               >
@@ -27,8 +28,10 @@ const App = () => {
                 {elemMovies.actors.map((movies) => {
                   return (
                     <>
-                      <img src="" alt="" />
-                      <h3>{movies.name}</h3>
+                      <div>
+                        <img src={movies.picture} />
+                        <h3>{movies.name}</h3>
+                      </div>
                     </>
                   );
                 })}

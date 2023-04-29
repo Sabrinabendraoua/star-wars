@@ -36,3 +36,6 @@ p {
   font-size: 2rem;
   border-radius: 5px;
 }
+img {
+  height: 50px;
+}
