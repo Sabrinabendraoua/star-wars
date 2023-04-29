@@ -14,8 +14,7 @@ main {
 }
 section {
   display: flex;
-
-  margin: 0 100px;
+  justify-content: center;
 }
 button {
   background-color: black;
