@@ -7,7 +7,7 @@ const App = () => {
   const [movieData, setMovieData] = useState(false);
 
   return (
-    <main className="background-img">
+    <main>
       <section>
         {data.map((elemMovies) => {
           return (
@@ -23,9 +23,10 @@ const App = () => {
                   {elemMovies.name}
                 </button>
               ) : (
-                <div>
-                  {elemMovies.actors.map((movies, index) => {
+                <div key={elemMovies.id}>
+                  {elemMovies.actors.map((movies) => {
                     console.log(movies.name);
+                    console.log(movies.picture);
                     return (
                       <div>
                         <h3>{movies.name}</h3>

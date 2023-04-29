@@ -37,4 +37,5 @@ p {
 }
 img {
   height: 50px;
+  object-fit: cover;
 }
